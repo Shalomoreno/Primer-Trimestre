@@ -1,0 +1,6 @@
+
+Me parece excelente que estés documentando las líneas de código. Este hábito no solo demuestra buenas prácticas de programación, sino que también te facilitará enormemente el trabajo en el futuro, ya que podrás entender con mayor facilidad qué hace cada fragmento de código, incluso después de mucho tiempo sin revisarlo.
+
+Además, esta documentación también será útil si otras personas acceden a tu repositorio, ya que podrán comprender mejor tu lógica y contribuir de manera más efectiva.
+
+¡Felicitaciones por el buen trabajo y el compromiso que estás demostrando! Vas por un camino excelente, sigue así y verás grandes resultados.
