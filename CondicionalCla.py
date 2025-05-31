@@ -23,15 +23,31 @@
 #         print("pero no por encima de 20")
         
 
-print("----------Ejercicio 1----------")
-a=int(input("Ingrese un primer número: "))
-b=int(input("Ingrese un segundo número: "))
-mul= a * b
-if mul >= 1:
-    print("El producto de los números es positivo")
-elif mul == 0:
-    print("El producto de los números es cero")
-elif mul < 0:
-    print("El producto de los números es negativo")
+# print("----------Ejercicio 1----------")
+# a=int(input("Ingrese un primer número: "))
+# b=int(input("Ingrese un segundo número: "))
+# mul= a * b
+# if mul >= 1:
+#     print("El producto de los números es positivo")
+# elif mul == 0:
+#     print("El producto de los números es cero")
+# elif mul < 0:
+#     print("El producto de los números es negativo")
+# else:
+#     print("El producto de los números es un número no válido")
+
+
+print("----------Ejercicio 2----------")
+año=int(input("Ingrese su año de nacimiento: "))
+if año <= 1940:
+    print("Usted es de la generación silenciosa")
+elif año <= 1964:
+    print("Usted es de la generación Baby Boomer")
+elif año <= 1979:
+    print("Usted es de la generación X")
+elif año <= 2000:
+    print("Usted es de la generación Y")
+elif año <= 2010:
+    print("Usted es de la generación Z")
 else:
-    print("El producto de los números es un número no válido")
+    print("Usted es de la generación Alfa")
