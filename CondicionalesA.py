@@ -26,18 +26,24 @@ else:
 print("-----Calculadora básica-----")
 n1=float(input("Ingrese el primer número: "))
 n2=float(input("Ingrese el segundo número: "))
-opcion=input("Ingrese la operación que desea realizar, suma + , resta - , multiplicación * ó división /: ")
-if opcion == "+":
-    resultado = n1 + n2
+
+print("Suma = S")
+print("Resta = R")
+print("Multiplicación = M")
+print("División = D")
+opcion=input("Ingrese la operación que desea realizar: ")
+
+if opcion.upper() == "S":
+    resultado = n1+n2
     print("El resultado de la suma es:", resultado)
-elif opcion == "-":
-    resultado = n1 - n2
+elif opcion.upper() == "R":
+    resultado = n1-n2
     print("El resultado de la resta es:", resultado)
-elif opcion == "*":
-    resultado = n1 * n2
+elif opcion.upper() == "M":
+    resultado = n1*n2
     print("El resultado de la multiplicación es:", resultado)
-elif opcion == "/":
-    resultado = n1 / n2
+elif opcion.upper() == "D":
+    resultado = n1/n2
     print("El resultado de la división es:", resultado)
 else:
-    print("Error: No se puede dividir por cero.")
+    print("Error: No se puede dividir por cero")
