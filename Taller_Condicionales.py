@@ -101,5 +101,3 @@ print("---Ejercicios con Listas (con condicionales)---")
 
 print("Ejercicio 11: Crea una lista con 5 números. Si el tercer número es mayor que 10, muestra “Mayor a 10”, si no, muestra “Menor o igual a 10”")
 numeros11 = []
-
-
