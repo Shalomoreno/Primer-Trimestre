@@ -181,7 +181,7 @@ if t_lst18[1]==2:
     lst_t18=tuple(t_lst18)
     print("Ahora la lista convertida en tupla es: ",lst_t18)
 else:
-    print("El segundo valor no es 2, la tupla permanece igual:", t18)
+    print("El segundo valor no es 2, la lista permanece igual:", t_lst18)
 
 
 print("Ejercicio 19: Dada la tupla (4, 9), accede al segundo valor. Si es mayor que 5, muestra “Coordenada alta”, si no, “Coordenada baja”.")
