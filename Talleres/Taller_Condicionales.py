@@ -146,6 +146,8 @@ print("La lista es: ",lst15)
 if lst15[1].lower() == "azul":
     lst15[1] = "Rojo"
     print("La lista actualizada es:", lst15)
+else:
+    print("El segundo color no es azul, la lista permanece igual:", lst15)
     
     
 
@@ -178,6 +180,8 @@ if t_lst18[1]==2:
     t_lst18[1]=10  # Cambiar el segundo valor
     lst_t18=tuple(t_lst18)
     print("Ahora la lista convertida en tupla es: ",lst_t18)
+else:
+    print("El segundo valor no es 2, la tupla permanece igual:", t18)
 
 
 print("Ejercicio 19: Dada la tupla (4, 9), accede al segundo valor. Si es mayor que 5, muestra “Coordenada alta”, si no, “Coordenada baja”.")
@@ -225,6 +229,8 @@ print("El diccionario es: ",dic22)
 if dic22["edad"] > 18:
     dic22["edad"]=21
     print("El diccionario modificado es: ",dic22)
+else:
+    print("La edad no es mayor a 18, el diccionario permanece igual:", dic22)
 
 
 print("Ejercicio 23: Crea un diccionario con nombre: Carlos. Si la clave “ciudad” no existe, agrégala con el valor “Bogotá” y muestra el diccionario. ")
@@ -235,6 +241,8 @@ dic23={
 if "ciudad" not in dic23:
     dic23["ciudad"] = "Bogotá"
     print("Diccionario actualizado:", dic23)
+else:
+    print("La clave 'ciudad' ya existe en el diccionario:", dic23)
 
 
 print("Ejercicio 24: Dado el diccionario producto:pan,precio: 1200, verifica si la clave “precio” existe. Si existe, muestra su valor, si no, muestra “No hay precio”")
