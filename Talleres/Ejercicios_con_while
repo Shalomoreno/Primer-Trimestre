@@ -1,0 +1,150 @@
+print("----------------------EJERCICIOS CON WHILE, CONDICIONALES Y ESTRUCTURAS----------------------")
+
+# print("1.SUMA HASTA CERO: Pide al usuario números enteros y súmalos hasta que ingrese un 0. Luego muestra el total.")
+# total=0
+# num=int(input("Ingresa un número (0 para terminar): "))
+
+# while num != 0:
+#     total += num
+#     num=int(input("Ingresa otro número (0 para terminar): "))
+# print("La suma total es:", total)
+
+
+# print("2. CONTRASEÑA SECRETA: Crea un programa que pida una contraseña usando while hasta que escriba 'python123' correctamente.")
+
+# contraseña=input("Ingresa la contraseña: ")
+
+# while contraseña != "python123":
+#     contraseña=input("Contraseña incorrecta, intentelo nuevamente: ")
+# print(f"Contraseña correcta, acceso concedido")
+
+
+# print("3. LISTA DE COMPRAS: Pide productos uno por uno y guárdalos en una lista. Termina cuando el usuario escriba 'fin', luego muestra toda la lista.")
+# ls_productos=[]
+# productos=input("Ingrese el nombre del producto: ")
+# while productos.lower() != "fin":
+#     ls_productos.append(productos)
+#     productos=input("(escriba 'fin' para terminar)\n Ingresa otro producto: ")
+# print(f"La lista es: {ls_productos}")
+
+
+# print("4. CONTADOR DE PARES E IMPARES: Pide 10 números al usuario. Usa while para contarlos y guarda cuántos son pares y cuántos impares.")
+# contador=0
+# pares=0
+# impares=0
+# while contador<10:
+#     num=int(input("Ingresa un número entero: "))
+#     if num % 2 == 0:
+#         pares +=1
+#     else:
+#         impares += 1
+#     contador +=1
+#     print(f"Llevas {contador} numeros\n")
+# print(f"Hay {pares} numeros pares y hay {impares} numeros impares")
+
+
+# print("5. PROMEDIO DE CALIFICACIÓNES:  Pide al usuario ingresar notas entre 0 y 5 hasta que escriba 'salir'. Guarda las notas en una lista y muestra el promedio.")
+
+# ls_promedio= []
+# nota=input("Ingresa tus notas (debe ser entre 0 y 5) y para salir escribe 'salir': ")
+
+# while nota.lower() != "salir":
+#     nota_num = float(nota)
+#     if 0 <= nota_num <= 5:
+#         ls_promedio.append(nota_num)
+#     else:
+#         print("Nota fuera de rango.")
+#     nota=input("Ingresa otra nota o 'salir': ")
+
+# if ls_promedio:
+#     print("\nNotas ingresadas:", ls_promedio)
+#     promedio = sum(ls_promedio) / len(ls_promedio)
+#     print(f"Promedio de notas: {promedio}")
+# else:
+#     print("No se ingresaron notas válidas.")
+
+
+# print("6. TABLA DE MULTIPLICAR INTERACTIVA: Pide un número y genera su tabla del 1 al 10 con while.")
+# num=int(input("Ingresar la tabla de multiplicar: "))
+# contador=1
+
+# while contador <= 10:
+#     resultado = num*contador
+#     print(f"{num}*{contador}={resultado}")
+#     contador +=1
+
+
+# print("7. ADIVINA EL NÚMERO: El programa tiene un número secreto (ej. 17). El usuario tiene que adivinarlo. Con cada intento, el programa dice si es mayor o menor.")
+
+# num=int(input("Ingresa un número y prueba si es el correcto: "))
+
+# while num !=17:
+#     if num <17:
+#         print("El numero es mayor")
+#     else:
+#         print("El número es menor")
+#     num=int(input("Intentalo nuevamente: "))
+# print("Lo lograste, el número es 17")
+
+
+# print("8. TUPLA DE FRUTAS: Crea una tupla con frutas. Usa while para pedirle al usuario que adivine frutas hasta que acierte una que esté en la tupla.")
+
+# frutas=["pera","manzana","mango"]
+# infr=input("Adivina las frutas de la tupla, ingresa una: ").lower()
+# while infr not in frutas:
+#     infr=input("Esa no está, ingresa otra: ").lower()
+# print("Si, esa esta en la tupla")
+
+
+# print("9. DICCIONARIO DE TRADUCCIÓN: Crea un diccionario con 5 palabras en español y su traducción al inglés. Usa while para que el usuario ingrese una palabra en español y muestre su traducción (si está).")
+
+# dic={
+#     "perro":"dog",
+#     "gato":"cat",
+#     "vaca":"cow",
+#     "cerdo":"pig",
+#     "loro":"parrot"
+# }
+
+# pal=input("Ingresa una palabra en español: ").lower()
+
+# while pal not in dic:
+#     pal=input("Esa palabra no está en el diccionario, ingresa otra: ").lower()
+# print(f"Esa palabra si esta en el diccionario, su traducción es: {dic[pal]}")
+
+
+print("10. CALCULADORA BÁSICA: Haz un menú dentro de un while para que el usuario elija: •  1. Sumar •2. Restar •3. Multiplicar •4. Dividir •5. Salir Luego realiza la operación con dos números ingresados.")
+
+while True:
+    print("\n Menú de operaciones:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir")
+
+    opc=input("Elige una opción (1-5): ")
+    
+    if opc=="5":
+        print("Saliendo del programa.")
+        break
+    else:
+        if opc in ['1', '2', '3', '4']:
+            num1 = float(input("Ingresa el primer número: "))
+            num2 = float(input("Ingresa el segundo número: "))
+        
+        if opc=="1":
+            resultado = num1 + num2
+            print(f"La suma de {num1} y {num2} es: {resultado}")
+        elif opc=="2":
+            resultado = num1 - num2
+            print(f"La resta de {num1} y {num2} es: {resultado}")
+        elif opc=="3":
+            resultado = num1 * num2
+            print(f"La multiplicación de {num1} y {num2} es: {resultado}")
+        elif opc=="4":
+            if num2 != 0:
+                resultado = num1 / num2
+                print(f"La división de {num1} entre {num2} es: {resultado}")
+            else:
+                print("Error: No se puede dividir por cero.")
+        else:
+            print("Opción no válida. Inténtalo de nuevo.")
+
+
+
