@@ -1,4 +1,4 @@
-print("----------------------EJERCICIOS CON WHILE, CONDICIONALES Y ESTRUCTURAS----------------------")
+# print("----------------------EJERCICIOS CON WHILE, CONDICIONALES Y ESTRUCTURAS----------------------")
 
 # print("1.SUMA HASTA CERO: Pide al usuario números enteros y súmalos hasta que ingrese un 0. Luego muestra el total.")
 # total=0
@@ -113,38 +113,102 @@ print("----------------------EJERCICIOS CON WHILE, CONDICIONALES Y ESTRUCTURAS--
 # print(f"Esa palabra si esta en el diccionario, su traducción es: {dic[pal]}")
 
 
-print("10. CALCULADORA BÁSICA: Haz un menú dentro de un while para que el usuario elija: •  1. Sumar •2. Restar •3. Multiplicar •4. Dividir •5. Salir Luego realiza la operación con dos números ingresados.")
+# print("10. CALCULADORA BÁSICA: Haz un menú dentro de un while para que el usuario elija: •  1. Sumar •2. Restar •3. Multiplicar •4. Dividir •5. Salir Luego realiza la operación con dos números ingresados.")
+
+# while True:
+#     print("\n Menú de operaciones:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir")
+
+#     opc=input("Elige una opción (1-5): ")
+    
+#     if opc=="5":
+#         print("Saliendo del programa.")
+#         break
+#     else:
+#         if opc in ['1', '2', '3', '4']:
+#             num1 = float(input("Ingresa el primer número: "))
+#             num2 = float(input("Ingresa el segundo número: "))
+        
+#         if opc=="1":
+#             resultado = num1 + num2
+#             print(f"La suma de {num1} y {num2} es: {resultado}")
+#         elif opc=="2":
+#             resultado = num1 - num2
+#             print(f"La resta de {num1} y {num2} es: {resultado}")
+#         elif opc=="3":
+#             resultado = num1 * num2
+#             print(f"La multiplicación de {num1} y {num2} es: {resultado}")
+#         elif opc=="4":
+#             if num2 != 0:
+#                 resultado = num1 / num2
+#                 print(f"La división de {num1} entre {num2} es: {resultado}")
+#             else:
+#                 print("No se puede dividir por cero")
+#         else:
+#             print("Opción no válida. Inténtalo de nuevo.")
+
+
+# print("11. REGISTRO DE EDADES: Pide nombres y edades de personas y guárdalos en un diccionario. Detente cuando el usuario escriba 'salir' como nombre. Luego muestra el diccionario completo.")
+
+# dic={}
+# nombre=""
+# edad=0
+
+# while True:
+#     print("Escribe 'salir' en nombre para terminar")
+#     nombre=input("Ingresa tu nombre: ")
+#     if nombre.lower() == "salir":
+#         break
+#     else:
+#         edad=int(input("Ingresa tu edad: "))
+#         dic[nombre]=edad
+# print(f"Los valores ingresados son {dic}")
+
+
+# print("12. BUSCAR UNA LISTA: Crea una lista de 5 colores. Usa un bucle while para que el usuario escriba colores hasta encontrar uno que esté en la lista.")
+
+# ls_color=["violeta","cian","fucsia","anaranjado","amarillo"]
+# adivinar=input("Escribe un color y adivina si está en la lista: ")
+
+# while adivinar.lower() not in ls_color:
+#     adivinar=input("Incorrecto, Escribe otro color y adivina si está en la lista: ")
+# print("Correcto, si está")
+    
+
+# print("13. POTENCIAS DE UN NÚMERO: Pide un número y muestra sus potencias desde la 1 hasta la 5 con while.")
+
+# num=int(input("Ingresa un número: "))
+# contador=1
+
+# while contador <= 5:
+#     resultado = num**contador
+#     print(f"{num}^{contador}={resultado}")
+#     contador +=1
+            
+
+# print("14. LISTA DE CUADRADOS: Pide 5 números con while y guarda en una lista sus cuadrados. Al final, muestra la lista.")
+# contador=1
+# ls=[]
+# while contador <=5:
+#     num=int(input("Ingresa un número: "))
+#     cuadrados=num**2
+#     cuadrados=str(cuadrados)
+#     ls.append(cuadrados)
+#     contador +=1
+# print(ls)
+
+
+print("15. DICCIONARIO DE ESTUDIANTES: Crea un programa que te deje registrar estudiantes con su nota final (nombre y nota). Usa un diccionario. El usuario debe poder agregar varios hasta que escriba 'fin'.")
+
+dic={}
 
 while True:
-    print("\n Menú de operaciones:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir")
-
-    opc=input("Elige una opción (1-5): ")
-    
-    if opc=="5":
-        print("Saliendo del programa.")
+    print("Escribe 'fin' para terminar")
+    nombre=input("Escribe el nombre del estudiante: ")
+    if nombre.lower() == "fin":
         break
-    else:
-        if opc in ['1', '2', '3', '4']:
-            num1 = float(input("Ingresa el primer número: "))
-            num2 = float(input("Ingresa el segundo número: "))
-        
-        if opc=="1":
-            resultado = num1 + num2
-            print(f"La suma de {num1} y {num2} es: {resultado}")
-        elif opc=="2":
-            resultado = num1 - num2
-            print(f"La resta de {num1} y {num2} es: {resultado}")
-        elif opc=="3":
-            resultado = num1 * num2
-            print(f"La multiplicación de {num1} y {num2} es: {resultado}")
-        elif opc=="4":
-            if num2 != 0:
-                resultado = num1 / num2
-                print(f"La división de {num1} entre {num2} es: {resultado}")
-            else:
-                print("Error: No se puede dividir por cero.")
-        else:
-            print("Opción no válida. Inténtalo de nuevo.")
-
-
+    nota=input("Escribe su nota final: ")
+    if nota.lower() == "fin":
+        break
+    dic[nombre]=nota
+print(f"Los estudiantes ingresados son {dic}")
 
