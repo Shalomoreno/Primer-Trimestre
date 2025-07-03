@@ -209,6 +209,6 @@ while True:
     nota=input("Escribe su nota final: ")
     if nota.lower() == "fin":
         break
-    dic[nombre]=nota
+    dic[nombre]=float(nota)
 print(f"Los estudiantes ingresados son {dic}")
 
